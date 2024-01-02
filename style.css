@@ -107,4 +107,53 @@ nav a:hover {
 .answer:hover {
   background: #c0d6df;
   color: white;
+}
+
+@media only screen and (max-width: 770px) {
+  body header .welcome {
+    padding: 10px;
+  }
+  body .questions {
+    bottom: 0;
+  }
+  body .questions .question {
+    margin: 50px auto;
+  }
+  body .social {
+    top: 200px;
+  }
+}
+@media only screen and (max-width: 490px) {
+  body header nav ul {
+    padding: 5px 0;
+  }
+  body header nav ul li {
+    margin: 0 5px;
+  }
+  body header .welcome {
+    padding: 2px;
+  }
+  body header .welcome h1 {
+    margin: 5px 0;
+  }
+  body header .welcome h3 {
+    margin: 5px;
+  }
+  body .questions {
+    top: 200px;
+  }
+  body .questions .question {
+    margin-bottom: 20px;
+  }
+  body .questions .question .prompt {
+    margin-bottom: 10px;
+  }
+  body .questions .question .answer {
+    width: 120px;
+    padding: 30px 0;
+    margin: 10px;
+  }
+  body .questions #question1 {
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

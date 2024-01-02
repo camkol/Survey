@@ -108,3 +108,61 @@ nav {
     color: $color_1;
   }
 }
+@media only screen and (max-width: 770px) {
+  body {
+    header {
+      .welcome {
+        padding: 10px;
+      }
+    }
+    .questions {
+      bottom: 0;
+      .question {
+        margin: 50px auto;
+      }
+    }
+    .social {
+      top: 200px;
+    }
+  }
+}
+@media only screen and (max-width: 490px) {
+  body {
+    header {
+      nav {
+        ul {
+          padding: 5px 0;
+          li {
+            margin: 0 5px;
+          }
+        }
+      }
+      .welcome {
+        padding: 2px;
+        h1 {
+          margin: 5px 0;
+        }
+        h3 {
+          margin: 5px;
+        }
+      }
+    }
+    .questions {
+      top: 200px;
+      .question {
+        margin-bottom: 20px;
+        .prompt {
+          margin-bottom: 10px;
+        }
+        .answer {
+          width: 120px;
+          padding: 30px 0;
+          margin: 10px;
+        }
+      }
+      #question1 {
+        margin-top: 10px;
+      }
+    }
+  }
+}
