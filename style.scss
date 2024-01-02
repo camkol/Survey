@@ -16,6 +16,7 @@ body {
   font-family: $font-family_1;
   font-size: 18px;
   font-weight: 300;
+  margin: 0;
 }
 ul {
   margin: 0;
@@ -47,10 +48,13 @@ nav {
   }
 }
 .welcome {
+  position: fixed;
   background-color: $background-color_2;
   padding: 40px;
   text-align: center;
   height: 150px;
+  top: 87px;
+  z-index: 10;
   h1 {
     color: $color_3;
     font-size: 32px;
@@ -110,19 +114,19 @@ nav {
 }
 @media only screen and (max-width: 770px) {
   body {
-    header {
-      .welcome {
-        padding: 10px;
-      }
+    .welcome {
+      padding: 10px;
+      position: relative;
     }
     .questions {
+      top: 100px;
       bottom: 0;
       .question {
         margin: 50px auto;
       }
     }
     .social {
-      top: 200px;
+      top: 100px;
     }
   }
 }
@@ -133,22 +137,23 @@ nav {
         ul {
           padding: 5px 0;
           li {
-            margin: 0 5px;
+            margin: 0 10px;
           }
         }
       }
-      .welcome {
-        padding: 2px;
-        h1 {
-          margin: 5px 0;
-        }
-        h3 {
-          margin: 5px;
-        }
+    }
+    .welcome {
+      top: 63px;
+      padding: 2px;
+      h1 {
+        margin: 5px 0;
+      }
+      h3 {
+        margin: 5px;
       }
     }
     .questions {
-      top: 200px;
+      top: 70px;
       .question {
         margin-bottom: 20px;
         .prompt {

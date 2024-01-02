@@ -6,6 +6,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
   font-weight: 300;
+  margin: 0;
 }
 
 ul {
@@ -41,10 +42,13 @@ nav a:hover {
 }
 
 .welcome {
+  position: fixed;
   background-color: #dbe9ee;
   padding: 40px;
   text-align: center;
   height: 150px;
+  top: 87px;
+  z-index: 10;
 }
 .welcome h1 {
   color: #466995;
@@ -110,17 +114,19 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 770px) {
-  body header .welcome {
+  body .welcome {
     padding: 10px;
+    position: relative;
   }
   body .questions {
+    top: 100px;
     bottom: 0;
   }
   body .questions .question {
     margin: 50px auto;
   }
   body .social {
-    top: 200px;
+    top: 100px;
   }
 }
 @media only screen and (max-width: 490px) {
@@ -128,19 +134,20 @@ nav a:hover {
     padding: 5px 0;
   }
   body header nav ul li {
-    margin: 0 5px;
+    margin: 0 10px;
   }
-  body header .welcome {
+  body .welcome {
+    top: 63px;
     padding: 2px;
   }
-  body header .welcome h1 {
+  body .welcome h1 {
     margin: 5px 0;
   }
-  body header .welcome h3 {
+  body .welcome h3 {
     margin: 5px;
   }
   body .questions {
-    top: 200px;
+    top: 70px;
   }
   body .questions .question {
     margin-bottom: 20px;
